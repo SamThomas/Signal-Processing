@@ -1,8 +1,4 @@
-% Projet d'électronique: Traîtement du signal ING3 TD3
-% Léandre LIXI
-% Stéphane ROSENFELD
-% Samuel THOMAS
-%---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 function varargout = ex1(varargin)
 % EX1 MATLAB code for ex1.fig
 %      EX1, by itself, creates a new EX1 or raises the existing
@@ -96,10 +92,10 @@ function pushbutton1_Callback(hObject, eventdata, handles)
     % Declaration & Initialisation
     c = 0.7;
     D = 10000; % ecart entre le son et le son avec echo (en point echantillonage)
-    b = zeros(1,10*D+1); % 10=N correspond au nombre d'echo souhaité
+    b = zeros(1,10*D+1); % 10=N correspond au nombre d'echo souhaitï¿½
     b(1)= 1; % b est le numerateur
     b(end)= c;
-    a = 1; % dénominateur
+    a = 1; % dï¿½nominateur
     handles.y = filter(b,a,handles.x); % permet de filtrer avec b ==> effectue l'echo   
    
     wavplay(handles.y,handles.Fe);
@@ -184,7 +180,7 @@ wavplay(yb, Fs); % Lecture du signal
     n = length(yb)-1;
     f = 0 : handles.Fe/n : handles.Fe;
     afft = abs(fft(x));
-    bfft = abs(fft(yb)); % Transformée de Fourier
+    bfft = abs(fft(yb)); % Transformï¿½e de Fourier
     plot(handles.frequency_axes, f, afft, 'b', f, bfft, 'm'); % plot Fourier Transform
     grid on;
 
@@ -203,7 +199,7 @@ function pushbutton3_Callback(hObject, eventdata, handles)
 
 [x , Fs , N] = wavread('ProjetElec');
 t = 500;
-% fréquence
+% frï¿½quence
 fc = 1000;
 Am1 = 0.1;
 z = Am1 * cos(2* pi * fc * t);
@@ -213,13 +209,13 @@ wavplay(b,Fs);
 
 % Create time plot in proper axes
 t=0:1/handles.Fe:(length(b)-1)/Fs; % and get sampling frequency
-plot(handles.time_axes, t, b); % graph it – try zooming while its up…not much visible until you do*/
+plot(handles.time_axes, t, b); % graph it ï¿½ try zooming while its upï¿½not much visible until you do*/
 grid on
 
 % Plot in frequency domain add the followings:
 n = length(b)-1;
 f = 0 : handles.Fe/n : handles.Fe;
-bfft = abs(fft(b)); % Transformée de Fourier
+bfft = abs(fft(b)); % Transformï¿½e de Fourier
 plot(handles.frequency_axes, f, bfft); % plot Fourier Transform
 grid on
 
@@ -232,16 +228,16 @@ function pushbutton4_Callback(hObject, eventdata, handles)
 
     c = 0.7;
     D = 1; % ecart entre le son et le son avec echo (en point echantillonage)
-    b = zeros(1,10*D+1); % 10=N correspond au nombre d'echo souhaité
+    b = zeros(1,10*D+1); % 10=N correspond au nombre d'echo souhaitï¿½
     b(1)= 1; % b est le numerateur
     b(end)= c;
-    a = 1; % dénominateur 
+    a = 1; % dï¿½nominateur 
     t= 1000000;
-    wavplay(handles.x,handles.Fe); % Lecture du signal modulé
+    wavplay(handles.x,handles.Fe); % Lecture du signal modulï¿½
 
 % Create time plot in proper axes
 t=0:1/handles.Fe:(length(handles.x)-1)/handles.Fe; % and get sampling frequency
-plot(handles.time_axes, t, handles.x); % graph it – try zooming while its up…not much visible until you do*/
+plot(handles.time_axes, t, handles.x); % graph it ï¿½ try zooming while its upï¿½not much visible until you do*/
 grid on;
 
 % Plot in frequency domain add the followings:
