@@ -10,6 +10,8 @@ The tool enables the user to select a .wav file and modify it using different au
 Two graphs (frequency and time axes) are ploted in order to analyse the effects of frequency or amplitude variations.
 The audio effects implemented are echo, wah-wah, flanger (frequential modualation) and amplitude modulation.
 
+As audio signals may be electronically represented in either digital or analog format, signal processing may occur in either domain. Analog processors operate directly on the electrical signal, while digital processors operate mathematically on the digital representation of that signal.
+
 ### ► MATLAB
 MATLAB (matrix laboratory) is a numerical computing environment and fourth-generation programming language. Developed by MathWorks, MATLAB allows matrix manipulations, plotting of functions and data, implementation of algorithms, creation of user interfaces, and interfacing with programs written in other languages, including C, C++, Java, and Fortran.
 
