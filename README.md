@@ -1,12 +1,12 @@
 ## Code for a signal processing tool using MATLAB
 
-  ![](http://www.ndt.net/article/v08n07/armanav/fig8.gif "Screenshot")
-
-
-> **Important Note**:This repository contains the code for a signal processing tool using MATLAB.
+> **Important Note**: this repository contains the code for a signal processing tool using MATLAB.
 The tool enables the user to select a .wav file and modify it using different audio effect.
 Two graphs (frequency and time axes) are ploted in order to analyse the effects of frequency or amplitude variations.
 The audio effects implemented are echo, wah-wah, flanger (frequential modualation) and amplitude modulation.
+
+
+  ![](http://www.ndt.net/article/v08n07/armanav/fig8.gif "Screenshot")
 
 As audio signals may be electronically represented in either digital or analog format, signal processing may occur in either domain. Analog processors operate directly on the electrical signal, while digital processors operate mathematically on the digital representation of that signal.
 
@@ -42,7 +42,7 @@ For faster applications with vast usage, ASICs might be designed specifically. F
 
 ### ► License [MIT](http://opensource.org/licenses/MIT "MIT")
 
-Copyright (c)
+Copyright Samuel Thomas (c)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
