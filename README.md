@@ -3,9 +3,7 @@
   ![](http://www.ndt.net/article/v08n07/armanav/fig8.gif "Screenshot")
 
 
-### ► Intro
-
-This repository contains the code for a signal processing tool using MATLAB.
+> **Important Note**:This repository contains the code for a signal processing tool using MATLAB.
 The tool enables the user to select a .wav file and modify it using different audio effect.
 Two graphs (frequency and time axes) are ploted in order to analyse the effects of frequency or amplitude variations.
 The audio effects implemented are echo, wah-wah, flanger (frequential modualation) and amplitude modulation.
